@@ -2,6 +2,7 @@
 
 
 # Importación de bibliotecas necesarias
+   ```python
     import torch
     import torch.nn as nn
     from torchvision import transforms, datasets
@@ -10,7 +11,7 @@
     import seaborn as sns
     import matplotlib.pyplot as plt
     from torchvision import models
-
+```
 # Define las rutas a las carpetas de datos de entrenamiento y prueba
     train_data_dir = './train'
     test_data_dir = './test'
