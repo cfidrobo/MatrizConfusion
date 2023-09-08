@@ -80,7 +80,7 @@
 
     train_losses.append(running_loss_color / len(train_loader))
 
-    # Evalúa el modelo en color en el conjunto de prueba
+ # Evalúa el modelo en color en el conjunto de prueba
     model_color.eval()
     all_preds_color = []
     all_labels_color = []
@@ -101,7 +101,7 @@
     test_losses.append(test_loss_color)
     test_accs.append(test_acc_color)
 
-    # Imprime métricas de entrenamiento y prueba en cada época
+  # Imprime métricas de entrenamiento y prueba en cada época
     print(f'Epoch [{epoch + 1}/{num_epochs}] Loss (Color): {train_losses[-1]:.4f}')
     print(f'Test Loss (Color): {test_losses[-1]:.4f}')
     print(f'Test Accuracy (Color): {test_accs[-1] * 100:.2f}%')
