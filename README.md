@@ -53,6 +53,8 @@
 
 # Define el cargador de datos para el conjunto de prueba en color
     train_loader = torch.utils.data.DataLoader(train_dataset_color, batch_size=32, shuffle=True)
+# Crea el DataLoader para el conjunto de prueba en color
+    test_loader = torch.utils.data.DataLoader(test_dataset_color, batch_size=32, shuffle=False)
 
 # Entrenamiento del modelo en color
     num_epochs = 10
