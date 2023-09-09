@@ -147,4 +147,4 @@
     plt.title('Confusion Matrix (Color)')
     plt.show()
 ```
-![Matriz de confusión](https://github.com/cfidrobo/MatrizConfusion/blob/main/matriz.png)
+![Matriz de confusión](https://github.com/cfidrobo/MatrizConfusion/blob/main/95matriz.png)
