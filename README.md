@@ -113,7 +113,7 @@
     all_labels_color = []
 
     with torch.no_grad():
-        for images_color, labels_color in test_loader_color:
+        for images_color, labels_color in test_loader:
             images_color, labels_color = images_color.to(device), labels_color.to(device)
 
 # Se obtienen las predicciones del modelo y se elige la clase con la puntuación mas alta.
