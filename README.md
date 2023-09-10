@@ -164,14 +164,14 @@
 3. **Valores en las Celdas:** Los valores dentro de la matriz indican cuántas muestras se clasificaron de una clase a otra. 
 
 
-	- **Clase 1 (primera fila):**  tiene una muestra que se clasificó correctamente como clase 0.
-	- **Clase 2 (segunda fila):** tiene 43 muestras que se clasificaron correctamente como clase 1 y 5 muestras que se clasificaron incorrectamente como otras clases.
-	- **Clase 3 (tercera fila):** tiene 87 muestras que se clasificaron correctamente como clase 2, 1 muestra que se clasificó incorrectamente como clase 3 y 1 muestra que se clasificó incorrectamente como clase 4.
-	- **Clase 4 (cuarta fila):**  tiene 44 muestras que se clasificaron correctamente como clase 3 y 1 muestra que se clasificó incorrectamente como clase 4.
-	- **Clase 5 (quinta fila):** tiene 442 muestras que se clasificaron correctamente como clase 4, 5 muestras que se clasificaron incorrectamente como clase 2, 1 muestra que se clasificó incorrectamente como clase 3 y 8 muestras que se clasificaron incorrectamente como otras clases.
-	- **Clase 6 (sexta fila):**  tiene 15 muestras que se clasificaron correctamente como clase 5 y 4 muestras que se clasificaron incorrectamente como otras clases.
-	- **Clase 7 (septima fila):** tiene 113 muestras que se clasificaron correctamente como clase 6 y 1 muestra que se clasificó incorrectamente como clase 3.
-	- **Clase 8 (octava fila):** tiene 26 muestras que se clasificaron correctamente como clase 7 y 1 muestra que se clasificó incorrectamente como clase 4.
+	- **Clase 1 (primera fila):**  tiene una muestra que se clasificó correctamente como clase 1.
+	- **Clase 2 (segunda fila):** tiene 43 muestras que se clasificaron correctamente como clase 2 y 5 muestras que se clasificaron incorrectamente como otras clases.
+	- **Clase 3 (tercera fila):** tiene 87 muestras que se clasificaron correctamente como clase 3, 1 muestra que se clasificó incorrectamente como clase 4 y 1 muestra que se clasificó incorrectamente como clase 5.
+	- **Clase 4 (cuarta fila):**  tiene 44 muestras que se clasificaron correctamente como clase 4 y 1 muestra que se clasificó incorrectamente como clase 5.
+	- **Clase 5 (quinta fila):** tiene 442 muestras que se clasificaron correctamente como clase 5, 5 muestras que se clasificaron incorrectamente como clase 3, 1 muestra que se clasificó incorrectamente como clase 4 y 8 muestras que se clasificaron incorrectamente como otras clases.
+	- **Clase 6 (sexta fila):**  tiene 15 muestras que se clasificaron correctamente como clase 6 y 4 muestras que se clasificaron incorrectamente como otras clases.
+	- **Clase 7 (septima fila):** tiene 113 muestras que se clasificaron correctamente como clase 7 y 1 muestra que se clasificó incorrectamente como clase 4.
+	- **Clase 8 (octava fila):** tiene 26 muestras que se clasificaron correctamente como clase 8 y 1 muestra que se clasificó incorrectamente como clase 5.
 
 
 ![Matriz de confusión](https://github.com/cfidrobo/MatrizConfusion/blob/main/95matriz.png)
