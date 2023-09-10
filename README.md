@@ -20,14 +20,14 @@
 # Define las transformaciones de aumento de datos para el conjunto de entrenamiento
   ```python
     data_transforms = transforms.Compose([
-        transforms.RandomHorizontalFlip(),             # Volteo horizontal aleatorio
-        transforms.RandomVerticalFlip(),               # Volteo vertical aleatorio
-        transforms.RandomRotation(30),                 # Rotación aleatoria en un rango de ±30 grados
+        transforms.RandomHorizontalFlip(),                   # Volteo horizontal aleatorio
+        transforms.RandomVerticalFlip(),                     # Volteo vertical aleatorio
+        transforms.RandomRotation(30),                       # Rotación aleatoria en un rango de ±30 grados
         transforms.RandomResizedCrop(224, scale=(0.8, 1.0)),  # Recorte aleatorio y redimensionamiento
         transforms.RandomAffine(degrees=0, translate=(0.1, 0.1)),  # Afinamiento aleatorio
         transforms.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.2),  # Ajustes de color
-        transforms.RandomGrayscale(p=0.2),            # Transformación a escala de grises aleatoria
-        transforms.ToTensor(),                        # Convierte la imagen en un tensor
+        transforms.RandomGrayscale(p=0.2),                  # Transformación a escala de grises aleatoria
+        transforms.ToTensor(),                              # Convierte la imagen en un tensor
         transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])  # Normaliza los valores de píxeles
     ])
 ```
@@ -60,7 +60,7 @@
 ```
 # Define la función de pérdida y el optimizador para el modelo en color
   ```python
-    criterion = nn.CrossEntropyLoss()                   #Se encarga de calcular la pérdida de datos con el objetivo de minimizar esto y que la predicción sea más precisa.
+    criterion = nn.CrossEntropyLoss()                         #Se encarga de calcular la pérdida de datos con el objetivo de minimizar esto y que la predicción sea más precisa.
     optimizer_color = torch.optim.Adam(model_color.classifier[1].parameters(), lr=0.001)     #Optimiza los pesos del modelo durante el entrenamiento, lr=0.001 especifica la tasa de aprendizaje, mientras mas alta sea el entrenamiento es menos preciso pero acelera el entrenamiento y si es mas bajo el entrenamiento es mas lento pero mas preciso.
 ```
 # Define el cargador de datos para el conjunto de prueba en color
@@ -71,13 +71,14 @@
 ```
 # Crea el DataLoader para el conjunto de prueba en color
   ```python
+#Toma el conjunto de datos, lo divide en lotes de 32 ejemplos cada uno y de manera aleatoria se mezclan antes de cada época de entrenamiento.
     test_loader = torch.utils.data.DataLoader(test_dataset_color, batch_size=32, shuffle=False)
 ```
 # Entrenamiento del modelo en color
   ```python
-    num_epochs = 50             # Número total de épocas de entrenamiento. 
+    num_epochs = 50                      # Número total de épocas de entrenamiento. 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")            # Verifica si hay una GPU disponible y, si es así, configura el dispositivo de entrenamiento en "cuda" (GPU), de lo contrario, se usa la CPU. 
-    model_color.to(device)         # Mueve al modelo al dispositivo seleccionado sea GPU o CPU.
+    model_color.to(device)               # Mueve al modelo al dispositivo seleccionado sea GPU o CPU.
 
 #Listas para almacenar las pérdidas y las precisiones durante el entrenamiento.
     train_losses = []
