@@ -155,6 +155,10 @@
     plt.title('Confusion Matrix (Color)')
     plt.show()
 ```
+# Resultados de Ejecución
+
+- Precisión en conjunto de entrenamiento (Color): 95.19%
+- Precisión en conjunto de prueba (Color): 95.19%
 
 # Interpretación de la Matriz
 1.  **Filas:** Cada fila de la matriz representa la clase real a la que pertenecen las muestras.
